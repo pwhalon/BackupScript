@@ -1,2 +1,6 @@
-# [Important] This must be here to prevent myself from uploading access creds to the public github repo.
+# [Important] aws_credentials must be here to prevent myself from uploading access creds to the public github repo.
+
+# [Moderate] backup.log is here so I dont add the log file to the git repo.
+
 aws_credentials
+backup.log

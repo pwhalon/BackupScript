@@ -7,4 +7,4 @@ I chose to have a local place for keeping my aws credentials so its very importa
 You can also just keep it in another folder which maybe where I end up putting it.
 As this is a first step, some things I may want to do would be to have error handling or adding a lifecycle policy to my objects so they dont just stack up.
 Lastly I added this script to a crontab line so that it should execute every month on the first.
-0 0 1 1-12 * /home/patrick/Documents/projects/backupScript/BackupScript/backup_script.rb
+0 0 1 1-12 * /home/patrick/Documents/projects/backupScript/BackupScript/backup_script.rb >> /home/patrick/Documents/projects/backupScript/BackupScript/backup.log 2>&1

@@ -8,7 +8,7 @@ BUCKET_NAME = 'pwhalon-backup'
 
 puts 'Getting credentials from the file.'
 
-creds = Aws::SharedCredentials.new(path: './aws_credentials')
+creds = Aws::SharedCredentials.new(path: '/home/patrick/Documents/projects/backupScript/BackupScript/aws_credentials')
 
 s3_client = Aws::S3::Client.new(
   region: 'us-west-2',
