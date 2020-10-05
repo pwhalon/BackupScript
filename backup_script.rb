@@ -6,6 +6,8 @@ require 'time'
 FILE_PATH = '/home/patrick/Documents/important.backup'
 BUCKET_NAME = 'pwhalon-backup'
 
+puts 'START SCRIPT --'
+
 puts 'Getting credentials from the file.'
 
 creds = Aws::SharedCredentials.new(path: '/home/patrick/Documents/projects/backupScript/BackupScript/aws_credentials')
@@ -34,3 +36,7 @@ s3_client.put_object({
 })
 
 puts 'Finished compressed folder upload.'
+
+`notify-send BackupScript "Backup script completed \n \`tail /home/patrick/Documents/projects/backupScript/BackupScript/backup.log\`" -t 0`
+
+puts "END SCRIPT --\n\n"
